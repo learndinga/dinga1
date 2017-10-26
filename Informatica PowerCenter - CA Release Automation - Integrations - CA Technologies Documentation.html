@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter -->
+<html lang="en" class=" js no-touch rgba boxshadow cssanimations cssgradients csstransitions video audio placeholder"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation</title>
+        
+	    
+<meta name="description" content="Action Pack for Informatica PowerCenter 10.1.1502
+The Action Pack for Informatica PowerCenter contains actions that enable you to create wor">
+<meta name="author" content="CA Technologies">
+<meta name="theme-plugin-version" content="2.6.0">
+<meta name="theme-plugin-name" content="CA Scroll Viewport Theme">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="lang" content="en">
+<meta name="lang-code" content="en">
+<meta name="space-key" content="RAINT">
+<meta name="confluence-content-type" content="page">
+<meta name="space-name" content="CA Release Automation - Integrations">
+<meta name="home-page-id" content="331629230">
+<meta name="page-id" content="331629320">
+<meta name="base-url" content="https://docops.ca.com">
+<meta name="page-url" content="/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter">
+<meta name="is-space-home" content="false">
+<meta name="is-error" content="false">
+<meta name="is-search-results" content="false">
+<meta name="is-blog-overview" content="false">
+<meta name="comments-rest-url" content="/plugins/servlet/scroll-viewport/comment">
+<meta name="is-mobile-device" content="false">
+<meta name="is-authenticated" content="false">
+<meta name="theme-base-url" content="/ca-release-automation/integrations/en/_/com.ca.confluence.plugins.themes.viewport.viewport-theme:ca-viewport-theme/1504436098000">
+<meta name="viewport-prefix" content="/ca-release-automation/integrations/en">
+<meta name="is-author" content="false">
+
+<meta name="atl_token" value="433bdfe1e6df92c3c189fd6abd967b9ef03e2e5a">
+
+<meta name="export-content-update-date-tooltip" content="Online content updated: {contentDate}. File updated: {pdfDate}.">
+<meta name="msg-watches-status-watching-page" content="You are watching this page. Receiving email updates about changes to this page.">
+<meta name="msg-watches-status-watching-space" content="You are watching this space. Receiving email updates for all content in this space.">
+<meta name="msg-watches-status-notwatching-page" content="You are not watching this page. Start watching to receive email updates about changes to this page.">
+<meta name="msg-export-inprogress" content="Exporting content.">
+<meta name="msg-export-queued-singular" content="Please wait until other exports finish. There is {0} export preceding your request.">
+<meta name="msg-export-queued-plural" content="Please wait until other exports finish. There are {0} exports preceding your request.">
+<meta name="msg-export-cancelled" content="Export was cancelled. Export was initiated by another user and it was being cached. Please start the export again.">
+<meta name="msg-export-error-start" content="Could not start new export. The following error occurred: {0} - {1}. Please try to start the export again. If the problem persists, please contact CA Support.">
+<meta name="msg-export-error-status" content="Could not retrieve export status. The following error occurred: {0} - {1}. Please refresh the page, and try to start the export again. If the problem persists, please contact CA Support.">
+<meta name="msg-export-error-cancel" content="Could not cancel export. The following error occurred: {0} - {1}. Please contact CA Support.">
+<meta name="msg-export-error-fail" content="Export failed. Please try to start the export again. If the problem persists, please contact CA Support.">
+
+<!--[if lt IE 9]>
+<script src="/ca-release-automation/integrations/en/_/com.ca.confluence.plugins.themes.viewport.viewport-theme:ca-viewport-theme/1504436098000/assets/bootstrap/js/respond-min.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript" async="" src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/munchkin.js"></script><script async="" type="text/javascript" src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/rtp.js"></script><script async="" id="demandbase_js_lib" src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/tq8CDMx7.min.js"></script><script type="text/javascript" async="" src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/ga.js"></script><script type="text/javascript" async="" src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/conversion_async.js"></script><script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/theme.min.js" type="text/javascript"></script>
+
+    
+<script>
+    var isUserInternal = false || false;
+
+    var I18n = {
+        "treeViewGroupExpanded": "Group expanded",
+        "treeViewGroupCollapsed": "Group collapsed",
+        "docLegalNotice": "Documentation Legal Notice",
+		 "olderReleasesLabel": "Older Releases",
+		 "olderReleasesNotAvailable": "Older releases are not available for this product",
+		 "olderReleasesLoadingError": "Error while loading older releases",
+		 "loadingLabel": "Loading..."
+     };
+
+</script>
+
+
+	
+
+<script type="text/javascript">
+
+    var mktgData = {
+        "channel":        "www.docops.ca.com",
+        "pageName":       "Informatica PowerCenter",
+        "template":       "homepage",
+        "server":         "www.docops.ca.com",
+        "GBU":            "",
+        "buDrivers":      "",
+        "buyersJourney":  "Awareness",
+        "country":        "",
+        "isMobile":       "false",
+        "transactionId":  "",
+        "slideshareName": "",
+        "section":        "",
+        "contentType":    "Home",
+        "pageType":       "",
+        "productID":      "",
+        "prodName":       "",
+        "prodCategory":   "",
+        "prodSolution":   "",
+        "includesForm":   "N"
+    };
+
+    (function () {
+        var geoServiceUrl = "https://freegeoip.net/json/";
+
+        jQuery.get(geoServiceUrl, function(data) {
+       		mktgData.country = data.country_code.toLowerCase();
+       });
+    })();
+
+</script>
+
+<script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/satelliteLib-be4f15694911edde0225f3876d50dd4cda0444b9.js"></script><script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/mbox-contents-09cc431e869b80041c808aba3378a6c4f04215ee.js"></script><script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/satellite-5912d3cd64746d02f7002b0a.js"></script><script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/analytics.js"></script><style id="at-mbox-default-style">.mboxDefault {visibility:hidden;}</style><style>.at-element-marker {visibility:visible;}</style><script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/satellite-59ca53b464746d67bd0013ea.js"></script><script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/tq8CDMx7.min(1).js"></script>
+<script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/ip.json"></script>
+
+
+<link rel="stylesheet" href="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/theme.min.css">
+
+    
+
+<script type="text/javascript">
+
+    // Disable any trackers that Atlassian may have added
+    for (i = 0; i < 50; i++) {  // normally it's 14, but let's use a hammer to kill any new ones too.
+        window['ga-disable-UA-20272869-' + i] = true;
+    }
+
+    var _gaq = _gaq || [];
+    _gaq.push(['af._setAccount', 'UA-46566240-1']);
+
+        
+    // set custom variables
+    setCustomVarSpaceKey();
+    setCustomVarUserKey();
+    if (typeof '331629320' === 'string') {
+        _gaq.push(
+                ['af._setCustomVar', 3, 'confluence-page-id', '331629320', 3],
+                ['af._setCustomVar', 4, 'confluence-content-type', 'page', 3],
+                ['af._set', 'title', 'Informatica PowerCenter']
+        );
+    }
+    // track page view
+    _gaq.push(['af._trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+    function setCustomVarSpaceKey() {
+        if (typeof 'RAINT' === 'string') {
+            _gaq.push(['af._setCustomVar', 1, 'confluence-space-key', 'RAINT', 3]);
+        }
+    }
+
+    function setCustomVarUserKey() {
+        if (typeof '' === 'string') {
+            _gaq.push(['af._setCustomVar', 2, 'confluence-user-key', '', 1]);
+        }
+    }
+
+</script>
+    <script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/satellite-59943ef264746d5d5a001a75.js"></script><script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/s-code-contents-31a536f27b5a8922af2bb3b774573ebe7eb7e276.js"></script><script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/satellite-59b14f2264746d351e00acc1.js"></script><script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/satellite-59a849f164746d520500294f.js"></script><script type="text/javascript" async="" src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/munchkin(1).js"></script><script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/saved_resource"></script></head>
+
+    <body class="main standard-page">
+        <div id="youtube-video-control-label" class="hidden">Youtube video</div>
+
+        <header class="header body-ca">
+    <div class="header-bar">
+        <div class="header__container">
+            <a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#" id="skip-to-content" class="sr-only sr-only-focusable">Skip to content</a>
+            <a href="https://docops.ca.com/" class="header__logo icon-logo" data-toggle="tooltip" data-placement="right" title="Documentation Portal Home Page">
+                <img alt="CA Technologies" src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/ca-logo.svg">
+            </a>
+
+            <ul class="header__navigation lite">
+                
+<li class="header__navigation-top">
+    <a href="http://www.ca.com/us/why-ca.html?intcmp=headernav">Why CA</a>
+</li>
+<li class="header__navigation-top">
+    <a href="http://www.ca.com/us/products.html?intcmp=headernav">Products</a>
+</li>
+<li class="header__navigation-top">
+    <a href="http://www.ca.com/us/education-training.html?intcmp=headernav">Education &amp; Training</a>
+</li>
+<li class="header__navigation-top">
+    <a href="http://www.ca.com/us/services-support.html?intcmp=headernav">Services &amp; Support</a>
+</li>
+<li class="header__navigation-top">
+    <a href="http://www.ca.com/us/partners.html?intcmp=headernav">Partners</a>
+</li>
+
+            </ul>
+
+            <div class="header__navigation-login">
+                                                        
+                    <a href="https://docops.ca.com/plugins/servlet/saml?os_destination=https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter"><i class="icon-profile account-icon"></i> Sign In</a>
+
+                            </div>
+
+            <div class="hidden-sm hidden-md hidden-lg mobile-search">
+                <div class="search-container main-search">
+    <form action="https://docops.ca.com/ca-release-automation/integrations/en/search" method="GET" class="search-form">
+        <div class="input-group">
+            <input type="text" maxlength="1000" class="form-control input-sm search-input live-search" placeholder="Search this product" autocomplete="off" name="q" value="" aria-label="Search input">
+            <input type="hidden" name="max" value="10">
+            <input type="hidden" name="key" value="RAINT">
+            <span class="input-group-btn">
+                <button class="btn btn-default btn-sm search-form-submit-btn" type="submit" aria-label="Search">
+                    <span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
+                </button>
+            </span>
+        </div>
+
+        <span class="live-search-results-description hidden" role="status" aria-live="polite">results are available. Use the up and down arrow keys to navigate. Use Enter to open the page. Use Escape to close the list and return to the search input.</span>
+        <span class="live-search-noresults-description hidden" role="status" aria-live="polite">Search returned no results.</span>
+
+        <div role="listbox" class="live-search-results" style="display: none">
+        </div>
+    </form>
+</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <a id="mobile-menu-expander" class="nav-expander fixed hidden hidden-print" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#">
+    <i class="fa fa-bars fa-lg"></i>
+    <span class="menu-label">Menu</span>
+</a>
+
+<div id="mobile-blanket" class="hidden-print">
+</div>
+
+<div id="mobile-navigation" class="mobile-navigation list-unstyled hidden-print">
+    <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#toc" aria-controls="toc" role="tab" data-toggle="tab">Contents</a>
+            </li>
+            <li role="presentation">
+                <a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#menu" aria-controls="menu" role="tab" data-toggle="tab">
+                    Menu
+                </a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="toc">
+                <nav>
+                    <ul class="sp-pagetree" data-viewport-id="7F0000010154C70AC9EC21DD38D16842" data-root="/ca-release-automation/integrations/en" data-current="/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter" role="tree" lang="en"><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/integrations-overview" tabindex="-1">Integrations Overview</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/integrations-compatibility-matrix" tabindex="-1">Integrations Compatibility Matrix</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/what-s-new" tabindex="-1">What's New</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/manage-action-packs-and-plug-ins" tabindex="-1">Manage Action Packs and Plug-ins</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal sp-tree-haschildren" role="treeitem" aria-level="1" tabindex="-1" aria-expanded="false"><i class="sp-tree-toggle fa fa-fw fa-caret-right" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/standard-action-packs" tabindex="-1">Standard Action Packs</a><i class="sp-tree-toggle fa fa-2x fa-fw fa-caret-right" aria-hidden="true"></i><ul role="group" aria-hidden="false"></ul></li><li class="ancestor sp-tree-haschildren open" role="treeitem" aria-level="1" tabindex="-1" aria-expanded="true"><i class="sp-tree-toggle fa fa-fw fa-caret-down" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs" tabindex="-1">Optional Action Packs</a><i class="sp-tree-toggle fa fa-2x fa-fw fa-caret-down" aria-hidden="true"></i><ul role="group" aria-hidden="false"><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/amazon-web-services" tabindex="-1">Amazon Web Services</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/apache-subversion" tabindex="-1">Apache Subversion</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/apache-tomcat" tabindex="-1">Apache Tomcat</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/atlassian-jira" tabindex="-1">Atlassian JIRA</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/cloud-foundry" tabindex="-1">Cloud Foundry</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-cloud-service-management" tabindex="-1">CA Cloud Service Management</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-endevor-software-change-manager-actions" tabindex="-1">CA Endevor Software Change Manager Actions</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-harvest-software-change-manager" tabindex="-1">CA Harvest Software Change Manager</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-service-desk" tabindex="-1">CA Service Desk</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-service-virtualization" tabindex="-1">CA Service Virtualization</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-test-data-manager" tabindex="-1">CA Test Data Manager</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-unified-infrastructure-management" tabindex="-1">CA Unified Infrastructure Management</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/chef" tabindex="-1">Chef</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/cisco-apic" tabindex="-1">Cisco APIC</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/docker" tabindex="-1">Docker</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/f5-big-ip" tabindex="-1">F5 BIG-IP</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/git" tabindex="-1">Git</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/hp-quality-center" tabindex="-1">HP Quality Center</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/hp-unified-functional-testing" tabindex="-1">HP Unified Functional Testing</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/http-server" tabindex="-1">HTTP Server</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-integration-bus-advanced" tabindex="-1">IBM Integration Bus Advanced</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-rational-clearcase" tabindex="-1">IBM Rational ClearCase</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-rational-clearquest" tabindex="-1">IBM Rational ClearQuest</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-rational-team-concert" tabindex="-1">IBM Rational Team Concert</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-websphere-application-server" tabindex="-1">IBM WebSphere Application Server</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-websphere-datapower" tabindex="-1">IBM WebSphere DataPower</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-websphere-mq" tabindex="-1">IBM WebSphere MQ</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-websphere-portal" tabindex="-1">IBM WebSphere Portal</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-z-os" tabindex="-1">IBM z/OS</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="current" role="treeitem" aria-level="2" tabindex="0"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter" tabindex="-1">Informatica PowerCenter</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/jenkins" tabindex="-1">Jenkins</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/jetbrains-teamcity" tabindex="-1">JetBrains TeamCity</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/jfrog-artifactory" tabindex="-1">JFrog Artifactory</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-azure" tabindex="-1">Microsoft Azure</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-biztalk" tabindex="-1">Microsoft BizTalk</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-component-services" tabindex="-1">Microsoft Component Services</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-internet-information-services-6" tabindex="-1">Microsoft Internet Information Services 6</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-internet-information-services" tabindex="-1">Microsoft Internet Information Services</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-messaging-queue" tabindex="-1">Microsoft Messaging Queue</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-net-global-assembly-cache" tabindex="-1">Microsoft .NET Global Assembly Cache</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-powershell" tabindex="-1">Microsoft PowerShell</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-sharepoint" tabindex="-1">Microsoft SharePoint</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-sql-server" tabindex="-1">Microsoft SQL Server</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-sql-server-reporting-service" tabindex="-1">Microsoft SQL Server Reporting Service</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-team-foundation-server" tabindex="-1">Microsoft Team Foundation Server</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-windows-file-and-folder-permissions" tabindex="-1">Microsoft Windows File and Folder Permissions</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-windows-task-scheduler" tabindex="-1">Microsoft Windows Task Scheduler</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/nagios" tabindex="-1">Nagios</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/nuget" tabindex="-1">NuGet</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/oracle-database" tabindex="-1">Oracle Database</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/oracle-glassfish" tabindex="-1">Oracle Glassfish</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/oracle-service-bus" tabindex="-1">Oracle Service Bus</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/oracle-solaris" tabindex="-1">Oracle Solaris</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/oracle-weblogic-server" tabindex="-1">Oracle WebLogic Server</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/perforce-versioning-engine" tabindex="-1">Perforce Versioning Engine</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/puppet-labs-puppet" tabindex="-1">Puppet Labs Puppet</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/red-hat-jboss-enterprise-application-platform" tabindex="-1">Red Hat JBoss Enterprise Application Platform</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/salesforce" tabindex="-1">Salesforce</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/sap-business-objects" tabindex="-1">SAP Business Objects</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/servicenow" tabindex="-1">ServiceNow</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/skytap" tabindex="-1">Skytap</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/software-ag-webmethods" tabindex="-1">Software AG webMethods</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/sonatype-nexus" tabindex="-1">Sonatype Nexus</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/tibco-activematrix-businessworks" tabindex="-1">TIBCO ActiveMatrix BusinessWorks</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/vmware-vcloud-director" tabindex="-1">VMware vCloud Director</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/vmware-vsphere" tabindex="-1">VMware vSphere</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li></ul></li><li class="normal sp-tree-haschildren" role="treeitem" aria-level="1" tabindex="-1" aria-expanded="false"><i class="sp-tree-toggle fa fa-fw fa-caret-right" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/ca-release-automation-connector-for-z-os" tabindex="-1">CA Release Automation Connector for z/OS</a><i class="sp-tree-toggle fa fa-2x fa-fw fa-caret-right" aria-hidden="true"></i><ul role="group" aria-hidden="false"></ul></li><li class="normal sp-tree-haschildren" role="treeitem" aria-level="1" tabindex="-1" aria-expanded="false"><i class="sp-tree-toggle fa fa-fw fa-caret-right" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/plug-ins" tabindex="-1">Plug-Ins</a><i class="sp-tree-toggle fa fa-2x fa-fw fa-caret-right" aria-hidden="true"></i><ul role="group" aria-hidden="false"></ul></li><li class="normal sp-tree-haschildren" role="treeitem" aria-level="1" tabindex="-1" aria-expanded="false"><i class="sp-tree-toggle fa fa-fw fa-caret-right" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/custom-integrations" tabindex="-1">Custom Integrations</a><i class="sp-tree-toggle fa fa-2x fa-fw fa-caret-right" aria-hidden="true"></i><ul role="group" aria-hidden="false"></ul></li><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/product-accessibility-features" tabindex="-1">Product Accessibility Features</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/display/LN/Documentation%20Legal%20Notice%20-%20English%20-%20Public" tabindex="-1">Documentation Legal Notice</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li></ul>
+
+<ul class="space-links list-unstyled" role="tree">
+
+</ul>
+                </nav>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="menu">
+                <div id="menu-panel">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation">
+                            <span>My Account</span>
+                            <ul id="my-account">
+                                                                                                        
+                                    <li role="presentation">
+                                        <a href="https://docops.ca.com/plugins/servlet/saml?os_destination=https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter" class=""> Sign In</a>
+                                    </li>
+                                                            </ul>
+                        </li>
+
+                        
+<li class="header__navigation-top">
+    <a href="http://www.ca.com/us/why-ca.html?intcmp=headernav">Why CA</a>
+</li>
+<li class="header__navigation-top">
+    <a href="http://www.ca.com/us/products.html?intcmp=headernav">Products</a>
+</li>
+<li class="header__navigation-top">
+    <a href="http://www.ca.com/us/education-training.html?intcmp=headernav">Education &amp; Training</a>
+</li>
+<li class="header__navigation-top">
+    <a href="http://www.ca.com/us/services-support.html?intcmp=headernav">Services &amp; Support</a>
+</li>
+<li class="header__navigation-top">
+    <a href="http://www.ca.com/us/partners.html?intcmp=headernav">Partners</a>
+</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="menu-close">
+        <a id="menu-close-btn" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#">
+            <i class="fa fa-times fa-2x"></i>
+        </a>
+    </div>
+</div>
+
+
+
+        <div id="space-name-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" id="space-name">
+                                                    <div>
+                                <a href="https://docops.ca.com/ca-release-automation/integrations/en">CA Release Automation - Integrations</a>
+                            </div>
+                                                <span id="branding-message">Documentation powered by DocOps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container " id="page-body">
+                                    <div class="row">
+                <div class="col-sm-3 col-md-3 hidden-xs hidden-print">
+                    <div class="search-container main-search">
+    <form action="https://docops.ca.com/ca-release-automation/integrations/en/search" method="GET" class="search-form">
+        <div class="input-group">
+            <input type="text" maxlength="1000" class="form-control input-sm search-input live-search" placeholder="Search this product" autocomplete="off" name="q" value="" aria-label="Search input">
+            <input type="hidden" name="max" value="10">
+            <input type="hidden" name="key" value="RAINT">
+            <span class="input-group-btn">
+                <button class="btn btn-default btn-sm search-form-submit-btn" type="submit" aria-label="Search">
+                    <span class="glyphicon glyphicon-search search-icon" aria-hidden="true"></span>
+                </button>
+            </span>
+        </div>
+
+        <span class="live-search-results-description hidden" role="status" aria-live="polite">results are available. Use the up and down arrow keys to navigate. Use Enter to open the page. Use Escape to close the list and return to the search input.</span>
+        <span class="live-search-noresults-description hidden" role="status" aria-live="polite">Search returned no results.</span>
+
+        <div role="listbox" class="live-search-results" style="display: none">
+        </div>
+    </form>
+</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-9 col-md-9 hidden-print" id="page-controls">
+                    <div class="btn-group pull-right" role="group">
+                                                    <div class="btn-group" role="group">
+                                
+                                                                 
+<button id="pdf-export-btn" class="btn btn-default content-export-btn btn-xs " role="button" data-format="PDF" aria-label="Click to download the documentation in PDF format.">
+    <i class="fa fa-file-pdf-o"></i>PDF
+</button>
+
+<button id="epub-export-btn" class="btn btn-default content-export-btn btn-xs " role="button" data-format="EPUB" aria-label="Click to download the documentation in EPUB format.">
+    <span class="epub"></span>EPUB
+</button>
+
+    <div class="modal" tabindex="-1" id="login-dialog" role="dialog" aria-labelledby="login-dialog-heading">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="login-dialog-heading">Login</h4>
+                </div>
+
+                <div class="modal-body">
+                                        <p>Please <a href="https://docops.ca.com/plugins/servlet/saml?os_destination=https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter">log in</a> to export content.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close">Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                        </div>
+                        
+                                                    <div class="btn-group" role="application" id="versions-container">
+                                <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="versions-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-code-fork"></i>
+                                    Versions
+                                    <span class="caret"></span>
+                                </button>
+
+                                <ul class="dropdown-menu" role="menu" id="versions" aria-labelledby="versions-dropdown"><li role="presentation"><a role="menuitem" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter/" tabindex="-1">Integrations</a></li></ul>
+                                
+                                                               	<div class="modal fade" id="older-releases-modal" role="dialog" tabindex="-1">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">Older Releases</h5>
+         </div>
+         <div class="modal-body">
+            <div class="input-group">
+               <span class="input-group-addon">
+               <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+               </span>
+               <input type="text" id="older-releases-search" class="form-control" aria-label="Search input" placeholder="Search">
+            </div>
+            <div class="info-container" id="older-release-container">
+               <ul class="list-group">Error while loading older releases</ul>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" aria-label="Close" data-dismiss="modal">Close</button>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>					 	
+
+                            <div class="btn-group" role="application" id="languages-container">
+                                <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="languages-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-globe"></i>
+                                    Language
+                                    <span class="caret"></span>
+                                </button>
+
+                                <ul class="dropdown-menu" role="menu" id="languages" aria-labelledby="languages-dropdown"><li role="presentation"><a role="menuitem" href="https://docops.ca.com/ca-release-automation/integrations/en" tabindex="-1">English</a></li></ul>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+
+            <!--page tree+bread getmbs-->
+            <div class="row" id="page-content-wrapper">
+                                    <div class="col-sm-3 col-md-3 hidden-print hidden-xs" id="desktop-navigation">
+                        <div data-spy="affix" class="affix-top" style="height: 283px; overflow-y: auto; top: 110px; bottom: 65px; width: 263px;">
+                            
+
+                            <ul class="sp-pagetree" data-viewport-id="7F0000010154C70AC9EC21DD38D16842" data-root="/ca-release-automation/integrations/en" data-current="/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter" role="tree" lang="en"><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/integrations-overview" tabindex="-1">Integrations Overview</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/integrations-compatibility-matrix" tabindex="-1">Integrations Compatibility Matrix</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/what-s-new" tabindex="-1">What's New</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/manage-action-packs-and-plug-ins" tabindex="-1">Manage Action Packs and Plug-ins</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal sp-tree-haschildren" role="treeitem" aria-level="1" tabindex="-1" aria-expanded="false"><i class="sp-tree-toggle fa fa-fw fa-caret-right" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/standard-action-packs" tabindex="-1">Standard Action Packs</a><i class="sp-tree-toggle fa fa-2x fa-fw fa-caret-right" aria-hidden="true"></i><ul role="group" aria-hidden="false"></ul></li><li class="ancestor sp-tree-haschildren open" role="treeitem" aria-level="1" tabindex="-1" aria-expanded="true"><i class="sp-tree-toggle fa fa-fw fa-caret-down" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs" tabindex="-1">Optional Action Packs</a><i class="sp-tree-toggle fa fa-2x fa-fw fa-caret-down" aria-hidden="true"></i><ul role="group" aria-hidden="false"><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/amazon-web-services" tabindex="-1">Amazon Web Services</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/apache-subversion" tabindex="-1">Apache Subversion</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/apache-tomcat" tabindex="-1">Apache Tomcat</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/atlassian-jira" tabindex="-1">Atlassian JIRA</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/cloud-foundry" tabindex="-1">Cloud Foundry</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-cloud-service-management" tabindex="-1">CA Cloud Service Management</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-endevor-software-change-manager-actions" tabindex="-1">CA Endevor Software Change Manager Actions</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-harvest-software-change-manager" tabindex="-1">CA Harvest Software Change Manager</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-service-desk" tabindex="-1">CA Service Desk</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-service-virtualization" tabindex="-1">CA Service Virtualization</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-test-data-manager" tabindex="-1">CA Test Data Manager</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ca-unified-infrastructure-management" tabindex="-1">CA Unified Infrastructure Management</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/chef" tabindex="-1">Chef</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/cisco-apic" tabindex="-1">Cisco APIC</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/docker" tabindex="-1">Docker</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/f5-big-ip" tabindex="-1">F5 BIG-IP</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/git" tabindex="-1">Git</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/hp-quality-center" tabindex="-1">HP Quality Center</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/hp-unified-functional-testing" tabindex="-1">HP Unified Functional Testing</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/http-server" tabindex="-1">HTTP Server</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-integration-bus-advanced" tabindex="-1">IBM Integration Bus Advanced</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-rational-clearcase" tabindex="-1">IBM Rational ClearCase</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-rational-clearquest" tabindex="-1">IBM Rational ClearQuest</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-rational-team-concert" tabindex="-1">IBM Rational Team Concert</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-websphere-application-server" tabindex="-1">IBM WebSphere Application Server</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-websphere-datapower" tabindex="-1">IBM WebSphere DataPower</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-websphere-mq" tabindex="-1">IBM WebSphere MQ</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-websphere-portal" tabindex="-1">IBM WebSphere Portal</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/ibm-z-os" tabindex="-1">IBM z/OS</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="current" role="treeitem" aria-level="2" tabindex="0"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter" tabindex="-1">Informatica PowerCenter</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/jenkins" tabindex="-1">Jenkins</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/jetbrains-teamcity" tabindex="-1">JetBrains TeamCity</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/jfrog-artifactory" tabindex="-1">JFrog Artifactory</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-azure" tabindex="-1">Microsoft Azure</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-biztalk" tabindex="-1">Microsoft BizTalk</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-component-services" tabindex="-1">Microsoft Component Services</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-internet-information-services-6" tabindex="-1">Microsoft Internet Information Services 6</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-internet-information-services" tabindex="-1">Microsoft Internet Information Services</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-messaging-queue" tabindex="-1">Microsoft Messaging Queue</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-net-global-assembly-cache" tabindex="-1">Microsoft .NET Global Assembly Cache</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-powershell" tabindex="-1">Microsoft PowerShell</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-sharepoint" tabindex="-1">Microsoft SharePoint</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-sql-server" tabindex="-1">Microsoft SQL Server</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-sql-server-reporting-service" tabindex="-1">Microsoft SQL Server Reporting Service</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-team-foundation-server" tabindex="-1">Microsoft Team Foundation Server</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-windows-file-and-folder-permissions" tabindex="-1">Microsoft Windows File and Folder Permissions</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/microsoft-windows-task-scheduler" tabindex="-1">Microsoft Windows Task Scheduler</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/nagios" tabindex="-1">Nagios</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/nuget" tabindex="-1">NuGet</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/oracle-database" tabindex="-1">Oracle Database</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/oracle-glassfish" tabindex="-1">Oracle Glassfish</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/oracle-service-bus" tabindex="-1">Oracle Service Bus</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/oracle-solaris" tabindex="-1">Oracle Solaris</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/oracle-weblogic-server" tabindex="-1">Oracle WebLogic Server</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/perforce-versioning-engine" tabindex="-1">Perforce Versioning Engine</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/puppet-labs-puppet" tabindex="-1">Puppet Labs Puppet</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/red-hat-jboss-enterprise-application-platform" tabindex="-1">Red Hat JBoss Enterprise Application Platform</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/salesforce" tabindex="-1">Salesforce</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/sap-business-objects" tabindex="-1">SAP Business Objects</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/servicenow" tabindex="-1">ServiceNow</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/skytap" tabindex="-1">Skytap</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/software-ag-webmethods" tabindex="-1">Software AG webMethods</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/sonatype-nexus" tabindex="-1">Sonatype Nexus</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/tibco-activematrix-businessworks" tabindex="-1">TIBCO ActiveMatrix BusinessWorks</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/vmware-vcloud-director" tabindex="-1">VMware vCloud Director</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="2" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/vmware-vsphere" tabindex="-1">VMware vSphere</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li></ul></li><li class="normal sp-tree-haschildren" role="treeitem" aria-level="1" tabindex="-1" aria-expanded="false"><i class="sp-tree-toggle fa fa-fw fa-caret-right" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/ca-release-automation-connector-for-z-os" tabindex="-1">CA Release Automation Connector for z/OS</a><i class="sp-tree-toggle fa fa-2x fa-fw fa-caret-right" aria-hidden="true"></i><ul role="group" aria-hidden="false"></ul></li><li class="normal sp-tree-haschildren" role="treeitem" aria-level="1" tabindex="-1" aria-expanded="false"><i class="sp-tree-toggle fa fa-fw fa-caret-right" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/plug-ins" tabindex="-1">Plug-Ins</a><i class="sp-tree-toggle fa fa-2x fa-fw fa-caret-right" aria-hidden="true"></i><ul role="group" aria-hidden="false"></ul></li><li class="normal sp-tree-haschildren" role="treeitem" aria-level="1" tabindex="-1" aria-expanded="false"><i class="sp-tree-toggle fa fa-fw fa-caret-right" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/custom-integrations" tabindex="-1">Custom Integrations</a><i class="sp-tree-toggle fa fa-2x fa-fw fa-caret-right" aria-hidden="true"></i><ul role="group" aria-hidden="false"></ul></li><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/ca-release-automation/integrations/en/product-accessibility-features" tabindex="-1">Product Accessibility Features</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li><li class="normal" role="treeitem" aria-level="1" tabindex="-1"><i class="sp-tree-toggle fa fa-fw" aria-hidden="true"></i><a class="sp-tree-link" href="https://docops.ca.com/display/LN/Documentation%20Legal%20Notice%20-%20English%20-%20Public" tabindex="-1">Documentation Legal Notice</a><i class="sp-tree-toggle fa fa-2x fa-fw" aria-hidden="true"></i></li></ul>
+
+<ul class="space-links list-unstyled" role="tree">
+
+</ul>
+
+                        </div>
+                    </div>
+                
+                <!--page content + related items starts -->
+                <div id="content-column" class="col-xs-12 col-sm-9 col-md-9">
+                    <div class="col-sm-12 col-md-12" id="breadcrumb-container">
+                                                    <button type="button" class="btn btn-default btn-xs hidden-print hidden-xs" aria-controls="desktop-navigation" aria-expanded="true" aria-label="Toggles the table of contents panel. Press enter or space bar to toggle the panel." id="toc-navigation-toggle">
+                                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>Contents
+                            </button>
+
+                            <span class="nav-separator hidden-sm hidden-xs hidden-print">|</span>
+                        
+                        <ul class="breadcrumb">
+                            <li id="breadcrumb-home-node">
+                                <a href="https://docops.ca.com/ca-release-automation/integrations/en">
+                                    <span class="glyphicon glyphicon-home"></span>Home</a>
+                            </li>
+
+                                                                                                                                                                                                            <li><a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs">Optional Action Packs</a></li>
+                                                                    
+                                                    </ul>
+                    </div>
+
+                                            <div class="col-xs-12 col-sm-12 col-md-12" id="page-content" lang="en">
+                                                                <h1 class="article-name">Informatica PowerCenter</h1>
+
+    <div id="page-meta">
+        <span id="updatedon">Last update January 30, 2017</span>
+    </div>
+
+<div id="wiki-content">
+    
+        
+
+        <div> 
+ <div class=""> 
+  <p></p>
+  <h2 id="InformaticaPowerCenter-ActionPackforInformaticaPowerCenter10.1.1502">Action Pack for Informatica PowerCenter 10.1.1502</h2>
+  <p>The Action Pack for&nbsp;Informatica PowerCenter contains actions that&nbsp;enable you to create workflow processes that perform&nbsp;operations in Informatica PowerCenter.</p>
+  <div class="conf-macro output-block" data-hasbody="true" data-macro-name="scroll-ignore">
+   <p></p>
+   <div class="toc-macro client-side-toc-macro  conf-macro output-block hidden-outline" data-headerelements="H1,H2" data-hasbody="false" data-macro-name="toc"><ul style=""><li><span class="toc-item-body" data-outline="1"><span class="toc-outline">1</span><a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#InformaticaPowerCenter-ActionPackforInformaticaPowerCenter10.1.1502" class="toc-link">Action Pack for Informatica PowerCenter 10.1.1502</a></span></li><li><span class="toc-item-body" data-outline="2"><span class="toc-outline">2</span><a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#InformaticaPowerCenter-What&#39;sNew" class="toc-link">What's New</a></span></li><li><span class="toc-item-body" data-outline="3"><span class="toc-outline">3</span><a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#InformaticaPowerCenter-InstalltheActionPack" class="toc-link">Install the Action Pack</a></span></li><li><span class="toc-item-body" data-outline="4"><span class="toc-outline">4</span><a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#InformaticaPowerCenter-PrerequisitestoRunInformaticaPowerCenterActions" class="toc-link">Prerequisites to Run Informatica PowerCenter Actions</a></span></li><li><span class="toc-item-body" data-outline="5"><span class="toc-outline">5</span><a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#InformaticaPowerCenter-InformaticaPowerCenterActions" class="toc-link">Informatica PowerCenter Actions</a></span></li></ul></div>
+   <p></p>
+  </div>
+  <p><strong>Actions Help</strong></p>
+  <p><span>For a list</span>&nbsp;of input and output descriptions for deployed actions, refer to:</p>
+  <ul>
+   <li><span class="confluence-link">Informatica PowerCenter Actions </span>in this document</li>
+   <li>The embedded actions help that is available in your installation at http://&lt;yourdeployment&gt;/nolio-app/actionshelp.jsp.</li>
+  </ul>
+  <p><strong>Supported Platforms:</strong></p>
+  <ul>
+   <li>Informatica PowerCenter actions in this pack support Informatica PowerCenter 9.0 and later</li>
+   <li>Informatica PowerCenter actions in this pack support CA Release Automation 5.0 and later</li>
+   <li>Windows server enterprise (32 bit)</li>
+   <li>Linux Server 5.5 (64 bit)</li>
+  </ul>
+  <h2 id="InformaticaPowerCenter-What&#39;sNew">What's New</h2>
+  <p>The following update was made for 10.1.1502</p>
+  <ul>
+   <li>Removed the json-path-*.jar dependency file.</li>
+  </ul>
+  <h2 id="InformaticaPowerCenter-InstalltheActionPack">Install the Action Pack</h2>
+  <p>Install and use these actions to execute commands and tasks in Informatica PowerCenter.</p>
+  <p><strong>Follow these steps:</strong></p>
+  <ol>
+   <li>Verify the <a data-macro-name="sp-plaintextbody-link" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#InformaticaPowerCenter-PrerequisitestoRunInformaticaPowerCenterActions" class="conf-macro output-inline" data-hasbody="true">Prerequisites to Run Informatica PowerCenter Actions</a>.</li>
+   <li>Deploy the action pack for Informatica PowerCenter.<br>For more information, see <span class="confluence-link"><span class="confluence-link"><span class="confluence-link"><a data-macro-name="sp-nobody-link" href="https://docops.ca.com/ca-release-automation/integrations/en/manage-action-packs-and-plug-ins" class="conf-macro output-inline" data-hasbody="false">Manage Action Packs and Plug-ins</a></span></span></span>.</li>
+   <li>Use&nbsp;Informatica PowerCenter actions in&nbsp;CA Release Automation processes.</li>
+  </ol>
+  <h2 id="InformaticaPowerCenter-PrerequisitestoRunInformaticaPowerCenterActions">Prerequisites to Run Informatica PowerCenter Actions</h2>
+  <p>To run&nbsp;Informatica PowerCenter actions, verify the following prerequisites:</p>
+  <ol>
+   <li>The Agent is required to be installed on the PowerCenter server to use PowerCenter actions.</li>
+   <li>The PMREP command-line tool is installed on the PowerCenter Client and in the PowerCenter Services bin directories.</li>
+   <li><p>If manually copying and importing the PowerCenter Action pack, also import the RDKCommon-1.0.jar file.</p> 
+    <div class="bs-callout bs-callout-note conf-macro output-block" data-hasbody="true" data-macro-name="sp-macrooverride-richtextbody-block"> 
+     <strong>Note:</strong> The working directory of these actions is: c:\ for Windows and / for Linux. If you use the Run Command-line action with PMREP, combined with this action pack, set c:\ or / in the Working Directory field. 
+    </div> </li>
+  </ol>
+  <h2 class="heading2" id="InformaticaPowerCenter-InformaticaPowerCenterActions">Informatica PowerCenter Actions</h2>
+  <p>The Action Pack for&nbsp;Informatica PowerCenter provides the following actions:</p>
+  <p></p>
+  <div class="toc-macro client-side-toc-macro  conf-macro output-block hidden-outline" data-headerelements="H3" data-hasbody="false" data-macro-name="toc"><ul style=""><li><span class="toc-item-body" data-outline="1"><span class="toc-outline">1</span><a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#InformaticaPowerCenter-IPC-AddObjecttoDeploymentGroup" class="toc-link">IPC - Add Object to Deployment Group</a></span></li><li><span class="toc-item-body" data-outline="2"><span class="toc-outline">2</span><a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#InformaticaPowerCenter-IPC-CreateDeploymentGroup" class="toc-link">IPC - Create Deployment Group</a></span></li><li><span class="toc-item-body" data-outline="3"><span class="toc-outline">3</span><a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#InformaticaPowerCenter-IPC-RegisterLocalRepository" class="toc-link">IPC - Register Local Repository</a></span></li><li><span class="toc-item-body" data-outline="4"><span class="toc-outline">4</span><a href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#InformaticaPowerCenter-IPC-RollBackDeployment" class="toc-link">IPC - Roll Back Deployment</a></span></li></ul></div>
+  <p></p>
+  <h3 id="InformaticaPowerCenter-IPC-AddObjecttoDeploymentGroup">IPC - Add Object to Deployment Group</h3>
+  <p>Adds an object to a deployment group.</p> 
+  <div class="expand-macro conf-macro output-block" data-hasbody="true" data-macro-name="sp-macrooverride-richtextbody-block"> 
+   <button class="expand-macro-btn" type="button" data-toggle="collapse" data-target="#expander-145452" aria-expanded="false" aria-controls="expander-145452"> <i class="fa fa-chevron-right"> </i> Input Values </button> 
+   <div class="collapse expand-content-container" id="expander-145452"> 
+    <div class="table-responsive">
+     <table class="table">
+      <tbody>
+       <tr>
+        <th class="confluenceTh">Name</th>
+        <th class="confluenceTh">Type</th>
+        <th class="confluenceTh">Description</th>
+       </tr>
+       <tr>
+        <td colspan="1" class="confluenceTd"><strong>* Deployment group name</strong></td>
+        <td colspan="1" class="confluenceTd">String</td>
+        <td colspan="1" class="confluenceTd">Name of the deployment group to add objects to.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd"><strong>* PMREP path</strong></td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">The directory where the PMREP executable is located.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Dbd separator</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">(<strong>Optional</strong>). If an ODBC source has a period (.) in the name, define a different separator character when you define the source object. For example, instead of database_name.source_name, define the source object as database_name\source_name, and define the dbd_separator as backslash (\).</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Dependency types</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Dependent objects to add to the deployment group with the object. Enter one of the following: all. pmrep adds the objects and all dependent objects, reusable&nbsp;and non-reusable, to the deployment group. “non-reusable”. pmrep adds the objects and the corresponding non-reusable dependent objects to the deployment group. <strong>Note:</strong> pmrep does not add dependent objects to the deployment group. If you omit this parameter, pmrep adds the objects and all dependent objects to the deployment group.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Folder name</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Folder that contains the object you are adding.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Object name</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Name of the object you are adding to the deployment group. You cannot enter the name of a checked out object.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Object subtype</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Type of task or transformation you are adding.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Object type</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Type of object you are adding. You can specify the source, target, transformation, mapping, session, worklet, workflow, scheduler, session configuration, task, cube, and dimension.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Output File Location</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Specifies the location and file name where the output of the command is written. For example, C:\temp\output.txt</td>
+       </tr>
+       <tr>
+        <td colspan="1" class="confluenceTd">Persistent input file</td>
+        <td colspan="1" class="confluenceTd">String</td>
+        <td colspan="1" class="confluenceTd">A text file that is generated from ExecuteQuery, Validate, or ListObjectDependencies that contains a list of object records with encoded IDs. If you use this parameter, do not input Object name, Object type, and Folder name.</td>
+       </tr>
+       <tr>
+        <td colspan="1" class="confluenceTd">Version number</td>
+        <td colspan="1" class="confluenceTd">String</td>
+        <td colspan="1" class="confluenceTd">Version of the object to add. The default is the latest version of the object. The command fails if you specify a version number for a non-versioned repository.</td>
+       </tr>
+      </tbody>
+     </table>
+    </div> 
+   </div> 
+  </div> 
+  <div class="expand-macro conf-macro output-block" data-hasbody="true" data-macro-name="sp-macrooverride-richtextbody-block"> 
+   <button class="expand-macro-btn" type="button" data-toggle="collapse" data-target="#expander-145453" aria-expanded="false" aria-controls="expander-145453"> <i class="fa fa-chevron-right"> </i> Output Values </button> 
+   <div class="collapse expand-content-container" id="expander-145453"> 
+    <div class="table-responsive">
+     <table class="table">
+      <tbody>
+       <tr>
+        <th class="confluenceTh">Name</th>
+        <th class="confluenceTh">Type</th>
+        <th class="confluenceTh">Description</th>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Error Output</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">This output parameter holds the standard error output of the command execution.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Execution Output</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">This output parameter holds the standard output of the command execution.</td>
+       </tr>
+       <tr>
+        <td colspan="1" class="confluenceTd">Exit Code</td>
+        <td colspan="1" class="confluenceTd">Integer</td>
+        <td colspan="1" class="confluenceTd">This output parameter holds the returned exit code of the command execution.</td>
+       </tr>
+      </tbody>
+     </table>
+    </div> 
+   </div> 
+  </div>
+  <h3 id="InformaticaPowerCenter-IPC-CreateDeploymentGroup">IPC - Create Deployment Group</h3>
+  <p>Creates a deployment group.</p> 
+  <div class="expand-macro conf-macro output-block" data-hasbody="true" data-macro-name="sp-macrooverride-richtextbody-block"> 
+   <button class="expand-macro-btn" type="button" data-toggle="collapse" data-target="#expander-145454" aria-expanded="false" aria-controls="expander-145454"> <i class="fa fa-chevron-right"> </i> Input Values </button> 
+   <div class="collapse expand-content-container" id="expander-145454"> 
+    <div class="table-responsive">
+     <table class="table">
+      <tbody>
+       <tr>
+        <th class="confluenceTh">Name</th>
+        <th class="confluenceTh">Type</th>
+        <th class="confluenceTh">Description</th>
+       </tr>
+       <tr>
+        <td class="confluenceTd"><strong>* Deployment group name</strong></td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Name of the deployment group to create.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd"><strong>* PMREP path</strong></td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">The directory where the PMREP executable is located.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Comments</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd"><strong>(Optional)</strong> Comments about the new deployment group.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Deployment group type</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Optional. Create a static group or use a query to dynamically create the group. You can specify static or dynamic. Default is static.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Output File Location</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Specifies the location and filename where the output of the command is written. For example, C:\temp\output.txt</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Query name</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Required if the deployment group is dynamic, is ignored if the group is static. Name of the query that is associated with the deployment group.</td>
+       </tr>
+       <tr>
+        <td colspan="1" class="confluenceTd">Query type</td>
+        <td colspan="1" class="confluenceTd">CreateDeploymentGroup$querytype6Type</td>
+        <td colspan="1" class="confluenceTd">Required if the deployment group is dynamic. Ignored if the group is static. Type of query to create a deployment group. You can specify shared or personal.</td>
+       </tr>
+      </tbody>
+     </table>
+    </div> 
+   </div> 
+  </div> 
+  <div class="expand-macro conf-macro output-block" data-hasbody="true" data-macro-name="sp-macrooverride-richtextbody-block"> 
+   <button class="expand-macro-btn" type="button" data-toggle="collapse" data-target="#expander-145455" aria-expanded="false" aria-controls="expander-145455"> <i class="fa fa-chevron-right"> </i> Output Values </button> 
+   <div class="collapse expand-content-container" id="expander-145455"> 
+    <div class="table-responsive">
+     <table class="table">
+      <tbody>
+       <tr>
+        <th class="confluenceTh">Name</th>
+        <th class="confluenceTh">Type</th>
+        <th class="confluenceTh">Description</th>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Error Output</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">This output parameter holds the standard error output of the command execution.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Execution Output</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">This output parameter holds the standard output of the command execution.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Exit Code</td>
+        <td class="confluenceTd">Integer</td>
+        <td class="confluenceTd">This output parameter holds the returned exit code of the command execution.</td>
+       </tr>
+      </tbody>
+     </table>
+    </div> 
+   </div> 
+  </div>
+  <h3 id="InformaticaPowerCenter-IPC-RegisterLocalRepository">IPC - Register Local Repository</h3>
+  <p>Registers a local repository with a connected global repository.</p> 
+  <div class="expand-macro conf-macro output-block" data-hasbody="true" data-macro-name="sp-macrooverride-richtextbody-block"> 
+   <button class="expand-macro-btn" type="button" data-toggle="collapse" data-target="#expander-145456" aria-expanded="false" aria-controls="expander-145456"> <i class="fa fa-chevron-right"> </i> Input Values </button> 
+   <div class="collapse expand-content-container" id="expander-145456"> 
+    <p>Machine name of the domain where the local repository is located. Required if the local repository is in a different domain and you do not use Local repository domain name. If you use this option, input the Local repository portal port number field.Port number for the domain where the local repository is located. Required if the local repository is in a different domain and you do not input Local repository domain name. If you input this field, input the Local repository portal host name field.</p>
+    <div class="table-responsive">
+     <table class="table">
+      <tbody>
+       <tr>
+        <th class="confluenceTh">Name</th>
+        <th class="confluenceTh">Type</th>
+        <th class="confluenceTh">Description</th>
+       </tr>
+       <tr>
+        <td class="confluenceTd"><strong>* Local repository name</strong></td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Name of the local repository to register.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd"><strong>* Local repository password</strong></td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Log in password for the local target repository.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd"><strong>* Local repository user name</strong></td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Local user name.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd"><strong>* PMREP Path</strong></td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">The directory where the PMREP executable is located.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Local repository domain name</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Name of the Informatica domain for the repository. Required if the local repository is in a different domain and you do not input the Local repository portal host name and Local repository portal port number fields.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Local repository portal host name</td>
+        <td class="confluenceTd">String</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Local repository portal port number</td>
+        <td class="confluenceTd">Integer</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Local repository user security domain</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Required if you use LDAP authentication. Name of the security domain that the user belongs to. Default is Native.</td>
+       </tr>
+       <tr>
+        <td colspan="1" class="confluenceTd">Output File Location</td>
+        <td colspan="1" class="confluenceTd">String</td>
+        <td colspan="1" class="confluenceTd">Specifies the location and filename to which the output of the command is written. For example, C:\temp\output.txt</td>
+       </tr>
+      </tbody>
+     </table>
+    </div> 
+   </div> 
+  </div> 
+  <div class="expand-macro conf-macro output-block" data-hasbody="true" data-macro-name="sp-macrooverride-richtextbody-block"> 
+   <button class="expand-macro-btn" type="button" data-toggle="collapse" data-target="#expander-145457" aria-expanded="false" aria-controls="expander-145457"> <i class="fa fa-chevron-right"> </i> Output Values </button> 
+   <div class="collapse expand-content-container" id="expander-145457"> 
+    <div class="table-responsive">
+     <table class="table">
+      <tbody>
+       <tr>
+        <th class="confluenceTh">Name</th>
+        <th class="confluenceTh">Type</th>
+        <th class="confluenceTh">Description</th>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Error Output</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">This output parameter holds the standard error output of the command execution.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Execution Output</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">This output parameter holds the standard error output of the command execution.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Exit Code</td>
+        <td class="confluenceTd">Integer</td>
+        <td class="confluenceTd">This output parameter holds the returned exit code of the command execution.</td>
+       </tr>
+      </tbody>
+     </table>
+    </div> 
+   </div> 
+  </div>
+  <h3 id="InformaticaPowerCenter-IPC-RollBackDeployment">IPC - Roll Back Deployment</h3>
+  <p>Rolls back a deployment to purge a deployed version from the target repository or folder and revert objects to a previous version of a deployment.</p> 
+  <div class="expand-macro conf-macro output-block" data-hasbody="true" data-macro-name="sp-macrooverride-richtextbody-block"> 
+   <button class="expand-macro-btn" type="button" data-toggle="collapse" data-target="#expander-145458" aria-expanded="false" aria-controls="expander-145458"> <i class="fa fa-chevron-right"> </i> Input Values </button> 
+   <div class="collapse expand-content-container" id="expander-145458"> 
+    <div class="table-responsive">
+     <table class="table">
+      <tbody>
+       <tr>
+        <th class="confluenceTh">Name</th>
+        <th class="confluenceTh">Type</th>
+        <th class="confluenceTh">Description</th>
+       </tr>
+       <tr>
+        <td class="confluenceTd"><strong>* Deployment group name</strong></td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Name of the deployment group to roll back.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd"><strong>* Nth latest deploy path</strong></td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Version of the deployment you want to roll back.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd"><strong>* PMREP path</strong></td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">The directory where the PMREP executable is located.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Output File Location</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">Specifies the location and file name where the output of the command is written. For example, C:\temp\output.txt</td>
+       </tr>
+      </tbody>
+     </table>
+    </div> 
+   </div> 
+  </div> 
+  <div class="expand-macro conf-macro output-block" data-hasbody="true" data-macro-name="sp-macrooverride-richtextbody-block"> 
+   <button class="expand-macro-btn" type="button" data-toggle="collapse" data-target="#expander-145459" aria-expanded="false" aria-controls="expander-145459"> <i class="fa fa-chevron-right"> </i> Output Values </button> 
+   <div class="collapse expand-content-container" id="expander-145459"> 
+    <div class="table-responsive">
+     <table class="table">
+      <tbody>
+       <tr>
+        <th class="confluenceTh">Name</th>
+        <th class="confluenceTh">Type</th>
+        <th class="confluenceTh">Description</th>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Error Output</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">This output parameter holds the standard error output of the command execution.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Execution Output</td>
+        <td class="confluenceTd">String</td>
+        <td class="confluenceTd">This output parameter holds the standard output of the command execution.</td>
+       </tr>
+       <tr>
+        <td class="confluenceTd">Exit Code</td>
+        <td class="confluenceTd">Integer</td>
+        <td class="confluenceTd">This output parameter holds the returned exit code of the command execution.</td>
+       </tr>
+      </tbody>
+     </table>
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+</div> 
+<div style="clear:both"></div>
+    
+</div>
+
+    <div id="feedback-like-unlike">
+        <div id="feedback-like-unlike-controls">
+            <span id="feedback-like-unlike-label">Was this helpful?</span>
+            <span id="feedback-yes-label" class="hidden">Yes</span>
+            <span id="feedback-no-label" class="hidden">No</span>
+
+            <a role="button" class="feedback-like-unlike-btn" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#" aria-labelledby="feedback-like-unlike-label feedback-yes-label" data-feedback-value="yes">
+                <i class="fa fa-smile-o"></i>Yes
+            </a>
+
+            <a role="button" class="feedback-like-unlike-btn" href="https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter#" aria-labelledby="feedback-like-unlike-label feedback-no-label" data-feedback-value="no">
+                <i class="fa fa-frown-o"></i>No
+            </a>
+        </div>
+       <div id="feedback-like-unlike-thank-you" style="display: none;">
+            <p>Thank you for your feedback.</p>
+        </div>
+    </div>
+
+        
+
+<div id="page-comments">
+
+    <button data-toggle="collapse" data-target="#comments-section" aria-expanded="false" aria-controls="comments-section" id="comments-toggle">0 Comments
+        <i class="fa fa-chevron-right"></i>
+    </button>
+
+    <div id="page-comments-wrapper">
+        <div id="new-comment-section">
+                            <p>Please <a href="https://docops.ca.com/plugins/servlet/saml?os_destination=https://docops.ca.com/ca-release-automation/integrations/en/optional-action-packs/informatica-powercenter">log in</a> to post comments.</p>
+                    </div>
+
+        <ol id="comments-section" class="comment-threads top-level collapse">
+                    </ol>
+
+    </div>
+</div>
+
+
+                                                    </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12" id="page-related">
+                            <aside data-spy="affix" class="affix-top">
+    <div id="feeds-container" class="page-related-item">
+        <p class="page-related-heading">More resources</p>
+
+        <div id="feeds-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <button class="previous carousel-navigation btn btn-default btn-xs" aria-label="More resources list Previous resources page"><i class="fa fa-fw fa-chevron-left"></i></button>
+            <button class="next carousel-navigation btn btn-default btn-xs" aria-label="More resources list Next resources page"><i class="fa fa-fw fa-chevron-right"></i></button>
+
+            <div class="carousel-inner" role="listbox">
+                
+            <div class="item active" aria-live="polite"><p class="feed-title">CA Release Automation Community Discussions</p><ul class="related-list"><li><a href="https://communities.ca.com/thread/241786180" target="_blank" aria-label="Environment Parameter is not shown to be dynamically assigned values"><span aria-hidden="true">Environment Parameter is not shown to be dynamically assigned values</span></a></li><li><a href="https://communities.ca.com/thread/241786011" target="_blank" aria-label="How RA Servers communicate using Citrix tool(Using Token) ?"><span aria-hidden="true">How RA Servers communicate using Citrix tool(Using Token) ?</span></a></li><li><a href="https://communities.ca.com/thread/241786090" target="_blank" aria-label="How are you managing your Artifact Repo?"><span aria-hidden="true">How are you managing your Artifact Repo?</span></a></li><li><a href="https://communities.ca.com/thread/241785861" target="_blank" aria-label="Puppet to Manage CARA Agent"><span aria-hidden="true">Puppet to Manage CARA Agent</span></a></li><li><a href="https://communities.ca.com/thread/241785089" target="_blank" aria-label="Jenkins in Failed Status - Deployment succeed"><span aria-hidden="true">Jenkins in Failed Status - Deployment succeed</span></a></li></ul></div><div class="item"><p class="feed-title">YouTube Education Videos</p><ul class="related-list thumbnails"><li><img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/hqdefault.jpg" alt="Automated Rollback with CA Release Automation" class="feed-thumbnail"><a href="https://www.youtube.com/watch?v=liptVp5JOK0" target="_blank" aria-label="Automated Rollback with CA Release Automation"><span aria-hidden="true">Automated Rollback with CA Release Automation</span></a></li><li><img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/hqdefault(1).jpg" alt="Integrating CA Service Virtualization with CA Release Automation" class="feed-thumbnail"><a href="https://www.youtube.com/watch?v=hyXLd6Opsl0" target="_blank" aria-label="Integrating CA Service Virtualization with CA Release Automation"><span aria-hidden="true">Integrating CA Service Virtualization with CA Release Automation</span></a></li><li><img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/hqdefault(2).jpg" alt="CA Release Automation: A Day in the Life of a Developer" class="feed-thumbnail"><a href="https://www.youtube.com/watch?v=g-Xiqe7rwkI" target="_blank" aria-label="CA Release Automation: A Day in the Life of a Developer"><span aria-hidden="true">CA Release Automation: A Day in the Life of a Developer</span></a></li><li><img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/hqdefault(3).jpg" alt="Deploying a complex, multi-tier application with CA Release Automation" class="feed-thumbnail"><a href="https://www.youtube.com/watch?v=ZeHheXpYK0o" target="_blank" aria-label="Deploying a complex, multi-tier application with CA Release Automation"><span aria-hidden="true">Deploying a complex, multi-tier application with CA Release Automation</span></a></li><li><img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/hqdefault(4).jpg" alt="Deploying a WebLogic application with CA Release Automation" class="feed-thumbnail"><a href="https://www.youtube.com/watch?v=o1NkfpK862U" target="_blank" aria-label="Deploying a WebLogic application with CA Release Automation"><span aria-hidden="true">Deploying a WebLogic application with CA Release Automation</span></a></li></ul></div><div class="item"><p class="feed-title">YouTube Marketing Videos</p><ul class="related-list thumbnails"><li><img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/hqdefault(5).jpg" alt="Release Automation: Teaming Up for App Deployment" class="feed-thumbnail"><a href="https://www.youtube.com/watch?v=e8rsc9bVvYs" target="_blank" aria-label="Release Automation: Teaming Up for App Deployment"><span aria-hidden="true">Release Automation: Teaming Up for App Deployment</span></a></li><li><img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/hqdefault(6).jpg" alt="Application Delivery in the Application Economy" class="feed-thumbnail"><a href="https://www.youtube.com/watch?v=042s0D6p5mc" target="_blank" aria-label="Application Delivery in the Application Economy"><span aria-hidden="true">Application Delivery in the Application Economy</span></a></li><li><img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/hqdefault(7).jpg" alt="Learn How Application Release Solutions Help You Lead the Way" class="feed-thumbnail"><a href="https://www.youtube.com/watch?v=2PM5TZwai_U" target="_blank" aria-label="Learn How Application Release Solutions Help You Lead the Way"><span aria-hidden="true">Learn How Application Release Solutions Help You Lead the Way</span></a></li><li><img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/hqdefault(8).jpg" alt="Citrix Adopts DevOps Principles to Gain Efficiency &amp; Speed Software Releases" class="feed-thumbnail"><a href="https://www.youtube.com/watch?v=jgEDelVJ0vI" target="_blank" aria-label="Citrix Adopts DevOps Principles to Gain Efficiency &amp; Speed Software Releases"><span aria-hidden="true">Citrix Adopts DevOps Principles to Gain Efficiency &amp; Speed Software Releases</span></a></li><li><img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/hqdefault(9).jpg" alt="Euroclear Adopts Continuous Delivery for New Customer-facing Application" class="feed-thumbnail"><a href="https://www.youtube.com/watch?v=Nu_xLXBHxRU" target="_blank" aria-label="Euroclear Adopts Continuous Delivery for New Customer-facing Application"><span aria-hidden="true">Euroclear Adopts Continuous Delivery for New Customer-facing Application</span></a></li></ul></div></div>
+
+            <p class="feeds-no-content" style="display:none">No additional resources are available for this product.</p>
+        </div>
+
+    </div>
+</aside>
+                        </div>
+
+                                    </div>
+            </div>
+
+
+        </div>
+
+
+        
+<footer class="noindex ca-footer parsys body-ca hidden-print">
+    <div class="ca-footer__wrapper">
+        <div class="ca-footer__column2">
+            <a href="http://www.facebook.com/CATechnologies" target="_self" class="ca-footer-icon-link">
+                <span class="ca-footer-icon icon-circle-facebook">
+                    <img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/facebook-logo.svg" alt="Facebook">
+                </span>
+            </a>
+            <a href="https://plus.google.com/+CATechnologies" target="_self" class="ca-footer-icon-link">
+                <span class="ca-footer-icon icon-circle-googleplus">
+                    <img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/google-plus-logo.svg" alt="Google+">
+                </span>
+            </a>
+            <a href="http://www.linkedin.com/company/ca-technologies" target="_self" class="ca-footer-icon-link">
+                <span class="ca-footer-icon icon-circle-linkedin">
+                    <img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/linkedin-logo.svg" alt="Linkedin">
+                </span>
+            </a>
+            <a href="http://twitter.com/CAInc" target="_self" class="ca-footer-icon-link">
+                <span class="ca-footer-icon icon-circle-twitter">
+                    <img src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/twitter-logo.svg" alt="Twitter">
+                </span>
+            </a>
+        </div>
+        <div class="ca-footer__column1">
+            <a href="http://www.ca.com/us/contact.aspx" target="_self" class="call-to-action-footer__link">Contact Us</a>
+            <a href="http://www.ca.com/us/privacy.aspx" target="_self" class="call-to-action-footer__link">Privacy Policy</a>
+            <a href="http://www.ca.com/us/data-transfers.aspx" target="_self" class="call-to-action-footer__link">Data Transfers</a>
+            <a href="http://www.ca.com/us/legal.aspx" target="_self" class="call-to-action-footer__link">Legal Notices</a>
+            <a href="http://www.ca.com/us/sitemap.aspx" target="_self" class="call-to-action-footer__link">Sitemap</a>
+            <br>Copyright © 2017 CA. All rights reserved.
+            <br>Powered by <a href="https://www.atlassian.com/software/confluence" target="_blank">Atlassian</a> | <a href="https://www.k15t.com/software/scroll-viewport/overview" target="_blank">Scroll Viewport</a>
+        </div>
+    </div>
+</footer>
+
+<span id="back-to-top" class="hidden-print" style="display: none">
+	        <span class="glyphicon glyphicon-menu-up"></span>
+</span>
+
+        
+        <script type="text/javascript">_satellite.pageBottom();</script>
+
+    
+    <script src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/bootstrap.js" async=""></script>
+
+
+<iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_catechnologies_0" src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/dest5.html" class="aamIframeLoaded" style="display: none; width: 0px; height: 0px;"></iframe><img style="display:none" alt="Demandbase pixel" id="db_pixel_ad" src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/pixel"><img style="display:none" alt="Demandbase pixel" id="db_pixel_rt" src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/pixel(1)"><iframe src="./Informatica PowerCenter - CA Release Automation - Integrations - CA Technologies Documentation_files/ect.html" id="db_ect" height="0" width="0" style="display: none;"></iframe></body></html>
